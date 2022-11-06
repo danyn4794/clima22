@@ -16,13 +16,13 @@
     padding: 5px;
     margin: 1px 5px;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
 }
   
 .div-busqueda button{
     padding: 5px 20px;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
     background-color: #1338BE;
     color: white;
     border: none;
@@ -40,7 +40,7 @@
 
 .div-nombre p{
     font-family: 'Titillium Web', sans-serif;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .div-nombre span{
@@ -57,15 +57,15 @@
 .select2{
     display: flex;
     align-items: center;
-    padding: 5px 40vw;
+    padding: 5px 30%;
 }
 
 .select1 select, .select2 select{
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Titillium Web', sans-serif;
 }
  h1,p{
-    font-size: 40px;
+    font-size: 32px;
     font-family: 'Titillium Web', sans-serif;
     color: #1338BE;
     text-align: center;

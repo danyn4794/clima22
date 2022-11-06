@@ -26,14 +26,6 @@
     </div>
 </div>
 
-<div class="select1">
-    <select name="country" (change)="changeCountry($event)" id="">
-        <option>Seleccione el pais</option>
-        <option [value]="e" *ngFor="let e of countryList">
-            {{e}}
-        </option>
-    </select>
-</div>
 <div class="select2">
     <select name="city" (change)="changeCity($event)" id="">
         <option>Seleccione la ciudad</option>

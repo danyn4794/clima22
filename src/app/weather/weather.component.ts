@@ -21,7 +21,6 @@ export class WeatherComponent implements OnInit {
   wind: string;
 
   cityList : string;
-  countryList : string;
   changeCity(e){
     this.nameCity = e.target.value;
     console.log(e.target.value)
@@ -37,15 +36,8 @@ export class WeatherComponent implements OnInit {
   ngOnInit(): void {
 
     this.WeatherService.getCities().subscribe((data2: any) => {
-      this.cityList = data2.data[56].cities;
-    })
-    this.WeatherService.getCities().subscribe((data2: any) => {
-      let country = data2.data.map (element =>{
-        return element.country;
-      })
-      this.countryList = country;
-    })
-    
+      this.cityList = data2.data[137].cities;
+    })    
   }
 
     search(){
@@ -57,7 +49,6 @@ export class WeatherComponent implements OnInit {
         this.minTemp = data.main.temp_min;
         this.weatherP = data.weather[0].description;
         this.wind = data.wind.speed;
-        console.log(data);
       })
     }
 }

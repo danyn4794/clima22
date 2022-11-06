@@ -19,16 +19,13 @@ export class WeatherComponent implements OnInit {
   minTemp: string;
   weatherP: string;
   wind: string;
-
+  icon: string;
   cityList : string;
   changeCity(e){
     this.nameCity = e.target.value;
     console.log(e.target.value)
   }
-  changeCountry(f){
-    this.nameCountry = f.target.value;
-    console.log(f.target.value)
-  }
+
   
 
   constructor(private WeatherService : WeatherService) { }
@@ -36,7 +33,7 @@ export class WeatherComponent implements OnInit {
   ngOnInit(): void {
 
     this.WeatherService.getCities().subscribe((data2: any) => {
-      this.cityList = data2.data[137].cities;
+      this.cityList = data2.data[92].cities;
     })    
   }
 
@@ -49,6 +46,7 @@ export class WeatherComponent implements OnInit {
         this.minTemp = data.main.temp_min;
         this.weatherP = data.weather[0].description;
         this.wind = data.wind.speed;
+        this.icon = data.weather[0].icon;
       })
     }
 }

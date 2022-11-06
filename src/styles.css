@@ -7,8 +7,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #1338BE;
+}
+
 .div-busqueda{
-    padding: 50px 30vw 5px 34vw;
+    padding: 5px 5px;
+    text-align: center;
 }
   
 .div-busqueda input{
@@ -23,29 +28,36 @@
     padding: 5px 20px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 24px;
-    background-color: #1338BE;
-    color: white;
+    background-color: white;
+    color: #1338BE;
     border: none;
     border-radius: 7px;
 }
+.div-busqueda button:hover {
+    border: 2px black solid
+}
 
 .container{
-    margin: 15px 5px;
+    margin: 5px 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .div-nombre{
-    padding: 5px 35vw;
-    text-align: center;
+    padding: 5px 5px
 }
 
 .div-nombre p{
     font-family: 'Titillium Web', sans-serif;
     font-size: 24px;
+    text-align: center;
+    color: white;
 }
 
 .div-nombre span{
     font-weight: bold;
-    color: #1338BE;
+    color: white;
 }
 
 .select1{
@@ -55,18 +67,22 @@
 }
 
 .select2{
-    display: flex;
-    align-items: center;
-    padding: 5px 30%;
+text-align: center;
 }
 
-.select1 select, .select2 select{
+.select2 select{
     font-size: 24px;
     font-family: 'Titillium Web', sans-serif;
 }
+.container img{
+    padding: 1px 2vw;
+    border: 2px #1338BE solid;
+    border-radius: 20px;
+}
+
  h1,p{
     font-size: 32px;
     font-family: 'Titillium Web', sans-serif;
-    color: #1338BE;
+    color: white;
     text-align: center;
  }

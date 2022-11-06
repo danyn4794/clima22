@@ -1,0 +1,45 @@
+<div class="div-busqueda">
+    <input type="text" [(ngModel)]="nameCity" placeholder="Ingrese la ciudad">
+    <button (click)="search()">Buscar</button>
+</div>
+<div class="container">
+    <div class="div-nombre">
+        <p class="etiqueta">Nombre de la ciudad: <span>{{name2}}</span></p>
+    </div>
+    <div class="div-nombre">
+        <p class="etiqueta">Pais: <span>{{country}}</span></p>
+    </div>
+    <div class="div-nombre">
+        <p class="etiqueta">Temperatura: <span>{{temp}} °C</span></p>
+    </div>
+    <div class="div-nombre">
+        <p class="etiqueta">Temperatura Maxima: <span>{{maxTemp}} °C</span></p>
+    </div>
+    <div class="div-nombre">
+        <p class="etiqueta">Temperatura Minima: <span>{{minTemp}} °C</span></p>
+    </div>
+    <div class="div-nombre">
+        <p class="etiqueta">Clima pronosticado: <span>{{weatherP}}</span></p>
+    </div>
+    <div class="div-nombre">
+        <p class="etiqueta">Viento: <span>{{wind}} km/h</span></p>
+    </div>
+</div>
+
+<div class="select1">
+    <select name="country" (change)="changeCountry($event)" id="">
+        <option>Seleccione el pais</option>
+        <option [value]="e" *ngFor="let e of countryList">
+            {{e}}
+        </option>
+    </select>
+</div>
+<div class="select2">
+    <select name="city" (change)="changeCity($event)" id="">
+        <option>Seleccione la ciudad</option>
+        <option [value]="c" *ngFor="let c of cityList">
+            {{c}}
+        </option>
+    </select>
+</div>
+

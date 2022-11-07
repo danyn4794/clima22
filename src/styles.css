@@ -34,7 +34,7 @@ body{
     border-radius: 7px;
 }
 .div-busqueda button:hover {
-    border: 2px black solid
+    border: 2px black solid;
 }
 
 .container{
@@ -70,7 +70,7 @@ body{
 text-align: center;
 }
 
-.select2 select{
+.select1 select, .select2 select{
     font-size: 24px;
     font-family: 'Titillium Web', sans-serif;
 }

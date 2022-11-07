@@ -10,8 +10,7 @@ import { WeatherService } from '../weather.service';
 export class WeatherComponent implements OnInit {
 
   nameCity: string;
-  nameCountry: string;
-  numberCountry : string;
+
   name2: string;
   country: string;
   temp: string;
@@ -21,12 +20,11 @@ export class WeatherComponent implements OnInit {
   wind: string;
   icon: string;
   cityList : string;
+
   changeCity(e){
     this.nameCity = e.target.value;
     console.log(e.target.value)
   }
-
-  
 
   constructor(private WeatherService : WeatherService) { }
 
@@ -34,6 +32,7 @@ export class WeatherComponent implements OnInit {
 
     this.WeatherService.getCities().subscribe((data2: any) => {
       this.cityList = data2.data[92].cities;
+      console.log(data2.data);
     })    
   }
 
